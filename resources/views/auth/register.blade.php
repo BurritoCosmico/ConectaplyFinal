@@ -1,7 +1,7 @@
 <x-guest-layout>
 
 
-    <x-jet-validation-errors class="mb-4" />
+
 
      <!-- LOGIN CONTAINER  -->
        <div class="container mx-auto ">
@@ -17,9 +17,9 @@
 
 
                      <div class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none ">
-                       <h3 class="pt-4 text-2xl text-center font-bold mb-5"> CREAR MI CUENTA</h3>
+                       <h3 class="pt-4 text-2xl text-center font-bold mb-5 mt-5"> CREAR MI CUENTA</h3>
                        <div class="w-full h-100">
-
+                        <x-jet-validation-errors class="mb-4" />
                            <form method="POST" action="{{ route('register') }}">
                            @csrf
                            {{-- NOMBRE INPUT --}}

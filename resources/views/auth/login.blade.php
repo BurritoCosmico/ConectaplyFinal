@@ -1,7 +1,6 @@
 
 <x-guest-layout >
 
-    <x-jet-validation-errors class="mb-4" />
 
     @if (session('status'))
         <div class="mb-4 font-medium text-sm text-green-600">
@@ -9,11 +8,10 @@
         </div>
     @endif
 
-
-
 <!-- LOGIN CONTAINER  -->
     <div class="container mx-auto ">
         <div class="flex justify-center items-center h-screen px-6 ">
+
             <!-- Row -->
             <div class="w-full xl:w-3/4 lg:w-11/12 flex border-2 border-slate-100 rounded-xl">
                 {{-- IMAGE LOGIN --}}
@@ -27,7 +25,7 @@
                   <div class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none ">
                     <h3 class="pt-4 text-2xl text-center font-bold mb-5"> INICIAR SESIÓN</h3>
                     <div class="w-full h-100">
-
+                        <x-jet-validation-errors class="mb-4" />
                         <form method="POST" action="{{ route('login') }}">
                         @csrf
 
