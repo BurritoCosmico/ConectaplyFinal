@@ -24,3 +24,20 @@ Route::middleware([
 
 
 });
+
+//Sitios
+Route::controller(SitesController::class)->group(function (){
+
+    //Ruta a Crontolador para mostrar Plantillas Disponibles
+    Route::get('/crearsitio','show')->name('crearsitio'); 
+
+    //Ruta para mostrar Sitios que el Usuario a Creado por medio de API
+    // Route::get('/sitios/{user}',[SitesController::class, 'sitios'])->name('sitios');
+
+    //Ruta a Controlador para crear sitio
+    Route::post('/crear','crear')->name('crear');
+
+    Route::get('/editar/{cuenta}/{id}','editar');
+
+    Route::get('/delete/{site}/{id}','delete');
+});
