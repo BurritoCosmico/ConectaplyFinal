@@ -18,11 +18,5 @@
 
 @section('js')
     <script> console.log('Hi!'); </script>
-    <script>
-        Swal.fire(
-            'Good job!',
-            'You clicked the button!',
-            'success'
-        )
-    </script>
+    
 @stop
