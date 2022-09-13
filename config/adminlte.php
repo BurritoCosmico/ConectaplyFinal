@@ -315,13 +315,13 @@ return [
 
         [
             'text' => 'Sitios',
-            'url'  => 'admin/blog',
+            'url'  => 'admin/sites',
             'icon'  => 'fas fa-fw fa-list',
         ],
 
         [
             'text' => 'Usuarios',
-            'url'  => 'admin/blog',
+            'url'  => 'admin/users',
             'icon'  => 'fas fa-fw fa-users',
         ],
 
